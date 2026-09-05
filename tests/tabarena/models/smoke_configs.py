@@ -64,8 +64,7 @@ SMOKE_OVERRIDES: dict[str, ModelSmokeTest] = {
     "iLTM": ModelSmokeTest({"finetuning_max_steps": 1, "n_ensemble": 1, "tree_n_estimators": 1}),
     "OrionMSP": ModelSmokeTest({"n_estimators": 1}),
     "EXAONE-Tabular": ModelSmokeTest({"ensemble_count": 1}),
-    "aplr_two_way_int": ModelSmokeTest({"cv_folds": 2}, use_larger_toy_datasets=True),
-    "aplr_deep_int": ModelSmokeTest({"cv_folds": 2}, use_larger_toy_datasets=True),
+    "aplr": ModelSmokeTest({"cv_folds": 2}, use_larger_toy_datasets=True),
 }
 
 
